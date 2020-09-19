@@ -1,0 +1,18 @@
+# Fichier pour les robots du site http://soodou-shop.zd.fr/
+
+#Autorise l’accès à tous les robots
+User-Agent: *
+
+#Interdit l’exploration du dossier app, core
+Disallow: /app/
+Disallow: /core/
+
+#Interdit l’exploration de l’url http://soodou-shop.zd.fr/pages/users/login.php
+Disallow: /pages/users/login.php
+
+#Autorise l’accès à toutes les ressources css et js
+Allow: /*.css?*
+Allow: /*.js?*
+
+#Lien vers le sitemap pour le référencement
+Sitemap: http://soodou-shop.zd.fr/sitemap.xml

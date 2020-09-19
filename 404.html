@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>404 - Error</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="public/css/ionicons.css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon-32x32.png">
+        <style type="text/css" >
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            body{
+                overflow: auto;
+            }
+            .err_image_sad{
+                color: rgb(255,0,0);
+            }
+            .err_alert_title{
+                font-family: arial,serif;
+                color: rgb(255,0,0);
+                font-weight: normal;
+            }
+            .err_alert_message{
+                font-family: calibri, sans-serif;
+                color: rgb(50, 50, 50);
+                word-wrap: break-word;
+            }
+            .err_nav_option{
+                border: 0;
+                border-radius: 5px; 
+                background-color: rgb(0, 125, 75);
+                color: rgb(255,255,255);
+            }
+            .err_nav_option:hover{
+                background-color: rgb(0, 50, 40);
+                cursor: pointer;
+            }
+            .err_nav_option:active{
+                background-color: rgb(225, 125, 0);
+            }
+        </style>
+
+        <style media="all and (min-width:1px)">
+            .err_page_content{
+                margin: auto;
+                padding: 15px;
+                margin-top: 10px;
+            }
+            .err_image_sad{
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 15px;
+                font-size: 50px;
+            }
+            .err_alert_title{
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 25px;
+            }
+            .err_alert_message{
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+            .err_nav{
+                width: 125px;
+                margin: auto;
+            }
+            .err_nav_option{
+                width: 125px;
+                height: 40px;
+                display: block;
+                font-size: 17px;
+            }
+            .err_nav_option:first-of-type,
+            .err_nav_option:nth-of-type(2){
+                margin-bottom: 20px;
+            }
+            .err_nav_option .icon{
+                display: none;
+            }
+        </style>
+
+        <style media="all and (min-width:300px)">
+            .err_image_sad{
+                margin-right: 25px;
+                font-size: 100px;
+            }
+            .err_alert_title{
+                font-size: 40px;
+            }
+            .err_nav{
+                width: 225px;
+            }
+            .err_nav_option{
+                width: 225px;
+                height: 50px;
+                font-size: 20px;
+            }
+            .err_nav_option:first-of-type,
+            .err_nav_option:nth-of-type(2){
+                margin-bottom: 25px;
+            }
+            .err_nav_option .icon{
+                display: inline-block;
+                font-size: 22px;
+            }
+        </style>
+
+        <style media="all and (min-width:500px)">
+            .err_page_content{
+                padding: 25px;
+            }
+            .err_image_sad{
+                font-size: 150px;
+            }
+            .err_alert_title{
+                font-size: 60px;
+            }
+            .err_alert_message{
+                font-size: 25px;
+                margin-bottom: 40px;
+            }
+            .err_nav{
+                width: 425px;
+            }
+            .err_nav_option{
+                width: 135px;
+                display: inline-block;
+                vertical-align: top;
+                font-size: 15px;
+            }
+            .err_nav_option:first-of-type,
+            .err_nav_option:nth-of-type(2){
+                margin-right: 10px;
+                margin-bottom: 0px;
+            }
+            .err_nav_option .icon{
+                display: none;
+            }
+        </style>
+
+        <style media="all and (min-width:600px)">
+            .err_nav{
+                width: 550px;
+            }
+            .err_nav_option{
+                width: 170px;
+                display: inline-block;
+                vertical-align: top;
+                font-size: 17px;
+            }
+            .err_nav_option:first-of-type,
+            .err_nav_option:nth-of-type(2){
+                margin-right: 20px;
+            }
+            .err_nav_option .icon{
+                display: inline-block;
+                font-size: 20px;
+            }
+        </style>
+
+        <style media="all and (min-width:800px)">
+            .err_page_content{
+                width: 750px;
+                margin-top: 40px;
+                padding: 0px;
+            }
+            .err_image_sad{
+                margin-right: 50px;
+                font-size: 200px;
+            }
+            .err_alert_title{
+                font-size: 80px;
+            }
+            .err_alert_message{
+                font-size: 27px;
+                margin-bottom: 50px;
+            }
+            .err_nav{
+                width: 700px;
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .err_nav_option{
+                width: 200px;
+                height: 45px;
+                font-size: 20px;
+            }
+            .err_nav_option:first-of-type,
+            .err_nav_option:nth-of-type(2){
+                margin-right:50px;
+            }
+            .err_nav_option .icon{
+                font-size: 22px;
+            }
+            .err_nav a{
+                text-decoration: none;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="err_page_content">
+            <figure class="err_image_sad icon fas fa-sad-cry">
+            </figure><h1 class="err_alert_title">Erreur 404</h1>
+            <p class="err_alert_message">
+                L'URL que vous avez entré ne mène à aucune ressource disponible du site web <em>&nbsp;soodou-shop.zd.fr&nbsp;</em> .<br/>
+                Veuillez entrer une autre URL ou cliquer sur un lien du menu ci-dessous. 
+            </p>
+            <nav class="err_nav">
+                
+                    <a href="public/"><span class="icon fas fa-home"></span> Accueil</a>
+                    <a href="public/catalogue.php"><span class="icon fas fa-folder"></span> Catalogue</a>
+            </nav>
+        </section>
+
+        <script src="public/js/fontawesome-all.min.js"></script>
+    </body>
+</html>
